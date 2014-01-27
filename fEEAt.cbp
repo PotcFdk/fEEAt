@@ -22,7 +22,10 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-O2" />
+					<Add option="-march=pentium4" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -39,6 +42,9 @@
 		</Unit>
 		<Unit filename="fEEAt/fEEAt.hpp">
 			<Option virtualFolder="fEEAt/" />
+		</Unit>
+		<Unit filename="fileinfo.rc">
+			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Unit filename="main.cpp" />
 		<Extensions>
