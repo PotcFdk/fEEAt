@@ -16,9 +16,9 @@ limitations under the License.
 
 #include <fEEAt.hpp>
 
-uint64_t fEEAt::gcd(uint64_t x, uint64_t y)
+int64_t fEEAt::gcd(int64_t x, int64_t y)
 {
-    uint64_t t;
+    int64_t t;
 
     while (y)
     {
@@ -30,7 +30,7 @@ uint64_t fEEAt::gcd(uint64_t x, uint64_t y)
     return x;
 }
 
-void r_eea (uint64_t x, uint64_t y, uint64_t * d, uint64_t * s, uint64_t * t)
+void r_eea (int64_t x, int64_t y, int64_t * d, int64_t * s, int64_t * t)
 {
     if (!y)
     {
@@ -42,16 +42,16 @@ void r_eea (uint64_t x, uint64_t y, uint64_t * d, uint64_t * s, uint64_t * t)
 
     r_eea(y, x % y, d, s, t);
 
-    uint64_t fl = reinterpret_cast<uint64_t>(x/y) * (*t);
-    uint64_t os = *s;
+    int64_t fl = reinterpret_cast<int64_t>(x/y) * (*t);
+    int64_t os = *s;
     *s = *t;
     *t = os - fl;
     return;
 }
 
-fEEAt::EEAResult * fEEAt::eea (uint64_t x, uint64_t y)
+fEEAt::EEAResult * fEEAt::eea (int64_t x, int64_t y)
 {
-    uint64_t d, s, t;
+    int64_t d, s, t;
     r_eea(x, y, &d, &s, &t);
     EEAResult * result = new EEAResult();
     result->gcd = d;
