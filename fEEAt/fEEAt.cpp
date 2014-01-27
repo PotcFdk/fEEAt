@@ -42,7 +42,7 @@ void r_eea (int64_t x, int64_t y, int64_t * d, int64_t * s, int64_t * t)
 
     r_eea(y, x % y, d, s, t);
 
-    int64_t fl = reinterpret_cast<int64_t>(x/y) * (*t);
+    int64_t fl = x/y * (*t);
     int64_t os = *s;
     *s = *t;
     *t = os - fl;
