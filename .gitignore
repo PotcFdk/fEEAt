@@ -1,0 +1,35 @@
+# Compiled stuff
+
+*.com
+*.class
+
+*.exe
+*.o
+*.so
+*.pdb
+*.manifest
+
+bin
+obj
+
+# Lib paths
+
+include
+lib
+
+# Code Blocks stuff
+
+*.layout
+*.depend
+*.cbTemp
+
+# OS stuff
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
