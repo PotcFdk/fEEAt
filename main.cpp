@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 **/
 
-#define VERSION "v0.1.1"
+#define VERSION "v0.1.2"
 #define BUILD "2014/01/27"
 
 #include <iostream>
@@ -41,8 +41,13 @@ int main()
 
         cout << endl
              << " gcd = " << result->gcd << endl
-             << " s   = " << result->s   << " (= " << a << "^-1 mod " << b << ")" << endl
-             << " t   = " << result->t   << endl
+             << " s   = " << result->s;
+
+        if (result->gcd == 1)
+            cout << " (= " << a << "^-1 mod " << b << ")";
+
+        cout << endl
+             << " t   = " << result->t << endl
              ///
              << endl << ' ' << result->s << " * " << a
              << " + " << result->t << " * " << b
