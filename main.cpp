@@ -22,19 +22,28 @@ using namespace fEEAt;
 
 int main()
 {
-    uint64_t a = 639826407500980799, b = 4848944590680906856;
+    cout << "fEEAt." << endl << "=======" << endl << endl;
 
-    EEAResult * result = eea(a, b);
+    int64_t a, b;
 
-    cout << "Using numbers " << a << ", " << b << ":" << endl << endl
-         ///
-         << "gcd: " << result->gcd << endl
-         << "s:   " << result->s   << endl
-         << "t:   " << result->t   << endl
-         ///
-         << endl << result->s << " * " << a
-         << " + " << result->t << " * " << b
-         << " = " << result->gcd << endl;
+    while (true)
+    {
+        cout << "> a = ";
+        cin >> a;
+        cout << "> b = ";
+        cin >> b;
+
+        EEAResult * result = eea(a, b);
+
+        cout << endl
+             << " gcd = " << result->gcd << endl
+             << " s   = " << result->s   << " (= " << a << "^-1 mod " << b << ")" << endl
+             << " t   = " << result->t   << endl
+             ///
+             << endl << ' ' << result->s << " * " << a
+             << " + " << result->t << " * " << b
+             << " = " << result->gcd << endl << endl;
+    }
 
     return 0;
 }
