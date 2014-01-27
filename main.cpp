@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 **/
 
-#define VERSION "v0.1"
+#define VERSION "v0.1.1"
 #define BUILD "2014/01/27"
 
 #include <iostream>
@@ -25,7 +25,7 @@ using namespace fEEAt;
 
 int main()
 {
-    cout << "fEEAt.  " << VERSION << "  Build: " << BUILD << endl
+    cout << "fEEAt.  " << VERSION << "  Build: " << BUILD << "  (c) PotcFdk, 2014" << endl
          << "======" << endl << endl;
 
     int64_t a, b;
