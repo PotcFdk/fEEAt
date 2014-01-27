@@ -17,15 +17,17 @@ limitations under the License.
 #ifndef FEEAT_H
 #define FEEAT_H
 
+#include <stdint.h>
+
 namespace fEEAt
 {
     struct EEAResult
     {
-        int gcd, s, t;
+        uint64_t gcd, s, t;
     };
 
-    int gcd (int x, int y);
-    EEAResult * eea (int x, int y);
+    uint64_t gcd (uint64_t x, uint64_t y);
+    EEAResult * eea (uint64_t x, uint64_t y);
 }
 
 #endif

@@ -22,7 +22,7 @@ using namespace fEEAt;
 
 int main()
 {
-    int a = 123, b = 27;
+    uint64_t a = 639826407500980799, b = 4848944590680906856;
 
     EEAResult * result = eea(a, b);
 
