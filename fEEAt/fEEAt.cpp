@@ -16,7 +16,7 @@ limitations under the License.
 
 #include <fEEAt.hpp>
 
-int64_t fEEAt::gcd(int64_t x, int64_t y)
+int64_t fEEAt::gcd (int64_t x, int64_t y)
 {
     int64_t t;
 
@@ -59,7 +59,7 @@ fEEAt::EEAResult * fEEAt::eea (int64_t x, int64_t y)
     }
 
     int64_t d, s, t;
-    r_eea(x, y, &d, &s, &t);
+    r_eea (x, y, &d, &s, &t);
     EEAResult * result = new EEAResult();
     result->gcd = d;
     result->s = s;
