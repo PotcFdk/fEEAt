@@ -51,6 +51,13 @@ void r_eea (int64_t x, int64_t y, int64_t * d, int64_t * s, int64_t * t)
 
 fEEAt::EEAResult * fEEAt::eea (int64_t x, int64_t y)
 {
+    if (x < y)
+    {
+        int64_t t = x;
+        x = y;
+        y = t;
+    }
+
     int64_t d, s, t;
     r_eea(x, y, &d, &s, &t);
     EEAResult * result = new EEAResult();
