@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 **/
 
-#define VERSION "v0.1.2"
-#define BUILD "2014/01/27"
+#define VERSION "v0.1.3"
+#define BUILD "2014/01/29"
 
 #include <iostream>
 #include <fEEAt.hpp>
