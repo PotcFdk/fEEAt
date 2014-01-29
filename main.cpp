@@ -23,7 +23,7 @@ limitations under the License.
 using namespace std;
 using namespace fEEAt;
 
-int main()
+int main ()
 {
     cout << "fEEAt.  " << VERSION << "  Build: " << BUILD << "  (c) PotcFdk, 2014" << endl
          << "======" << endl << endl;
@@ -37,7 +37,7 @@ int main()
         cout << "> b = ";
         cin >> b;
 
-        EEAResult * result = eea(a, b);
+        EEAResult * result = eea (a, b);
 
         cout << endl
              << " gcd = " << result->gcd << endl
