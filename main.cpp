@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 **/
 
-#define VERSION "v0.1.3"
-#define BUILD "2014/01/29"
+#define VERSION "v0.1.4"
+#define BUILD "2014/02/02"
 
 #include <iostream>
 #include <fEEAt.hpp>
@@ -45,11 +45,11 @@ int main ()
              << " t   = " << result->t;
 
         if (result->gcd == 1)
-            cout << " (= " << a << "^-1 mod " << b << ")";
+            cout << " (= " << result->num << "^-1 mod " << result->mod << ")";
 
         cout << endl
-             << ' ' << result->s << " * " << a
-             << " + " << result->t << " * " << b
+             << ' ' << result->s << " * " << result->mod
+             << " + " << result->t << " * " << result->num
              << " = " << result->gcd << endl << endl;
     }
 

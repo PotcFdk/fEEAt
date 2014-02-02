@@ -23,7 +23,7 @@ namespace fEEAt
 {
     struct EEAResult
     {
-        int64_t gcd, s, t;
+        int64_t gcd, s, t, num, mod;
     };
 
     int64_t gcd (int64_t x, int64_t y);
