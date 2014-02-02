@@ -41,15 +41,14 @@ int main ()
 
         cout << endl
              << " gcd = " << result->gcd << endl
-             << " s   = " << result->s;
+             << " s   = " << result->s << endl
+             << " t   = " << result->t;
 
         if (result->gcd == 1)
             cout << " (= " << a << "^-1 mod " << b << ")";
 
         cout << endl
-             << " t   = " << result->t << endl
-             ///
-             << endl << ' ' << result->s << " * " << a
+             << ' ' << result->s << " * " << a
              << " + " << result->t << " * " << b
              << " = " << result->gcd << endl << endl;
     }
