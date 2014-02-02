@@ -64,5 +64,7 @@ fEEAt::EEAResult * fEEAt::eea (int64_t x, int64_t y)
     result->gcd = d;
     result->s = s;
     result->t = t;
+    result->mod = x;
+    result->num = y;
     return result;
 }

@@ -1,8 +1,8 @@
 FEEAT_ICON ICON "feeaticon.ico"
 
 1 VERSIONINFO
-FILEVERSION     0,1,3,0
-PRODUCTVERSION  0,1,3,0
+FILEVERSION     0,1,4,0
+PRODUCTVERSION  0,1,4,0
 BEGIN
   BLOCK "StringFileInfo"
   BEGIN
@@ -10,12 +10,12 @@ BEGIN
     BEGIN
       VALUE "CompanyName", "PotcFdk"
       VALUE "FileDescription", "Free Extended Euclidean Algorithm Tool"
-      VALUE "FileVersion", "0.1.3"
+      VALUE "FileVersion", "0.1.4"
       VALUE "InternalName", "fEEAt"
       VALUE "LegalCopyright", "PotcFdk"
       VALUE "OriginalFilename", "fEEAt.exe"
       VALUE "ProductName", "fEEAt"
-      VALUE "ProductVersion", "0.1.3"
+      VALUE "ProductVersion", "0.1.4"
     END
   END
 
